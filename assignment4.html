@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header><h1>Create An Account</h1></header>
+    <form>
+      <div>
+        <label for="">First name</label>
+        <input required type="text" placeholder="First Name" />
+      </div>
+      <div>
+        <label for="">Last name</label>
+        <input required type="text" placeholder="Last Name" />
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input required type="email" placeholder="Email" />
+      </div>
+      <div>
+        <label for="">Username</label>
+        <input required type="text" placeholder="Username" />
+      </div>
+      <div>
+        <label for="">Password</label>
+        <input required type="password" placeholder="Password" minlength="10" />
+      </div>
+      <div>
+        <label for="">Birth date</label>
+        <input required type="date" />
+      </div>
+      <div>
+        <label for="">How happy are you?</label>
+        <input required type="range" list="tickmarks" />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="">What is your fav.color?</label>
+        <input required type="color" />
+      </div>
+      <div>
+        <label for="">Create Account</label>
+        <input required type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
