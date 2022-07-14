@@ -1,0 +1,107 @@
+body {
+    background-color: #00C6AC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    border-width: 2.5px;
+}
+
+/* status-bar */
+.playlist {
+    width: 320px;
+    padding: 40px 20px 20px;
+    background-color: white;
+}
+.playlist__status-bar {
+    height: 25px;
+    margin-bottom: 40px;
+}
+.playlist__status-bar__exit {
+    border: none;
+    background-color: white;
+    margin-right: 75px;
+}
+.playlist__status-bar__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* profile */
+.playlist__profile {
+    display: flex;
+}
+.playlist__profile__photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 15%;
+    background-color: #FFBC12;
+}
+.playlist__profile__photo .fa-image {
+    color: white;
+}
+.playlist__profile__text {
+    padding: 10px 20px;
+}
+.playlist__profile__text strong {
+    font-size: 30px;
+}
+.playlist__profile__text p {
+    margin: 10px 0px 0px;
+}
+
+/* do */
+.playlist__do {
+    margin: 30px 0px;
+}
+.playlist__do button {
+    background-color: white;
+    height: 50px;
+    border-bottom-width: 6px;
+}
+.playlist__do__play {
+    width: 140px;
+    border-radius: 15px;
+}
+.playlist__do__heart,
+.playlist__do__plus {
+    width: 50px;
+    border-radius: 50%;
+}
+.playlist__do__heart {
+    margin: 0px 20px;
+}
+
+/* list */
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+li {
+    margin-bottom: 30px;
+    display: flex;
+}
+.playlist__list button {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 15%;
+    background-color: #F85A2A;
+}
+.playlist__list strong {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+.playlist__list p {
+    margin: 5px 0px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.playlist__list li:nth-child(2) button{
+    background-color: #FE89BC;
+}
+.playlist__list li:nth-child(3) button{
+    background-color: #1947E4;
+}
+.playlist__list li:nth-child(4) button{
+    background-color: #00C6AB;
+}
