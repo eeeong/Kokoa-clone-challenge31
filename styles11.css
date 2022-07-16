@@ -10,18 +10,21 @@ body {
 .play-music {
     width: 400px;
     background-color: white;
-    margin: 0px 20px;
+    margin: 0px 40px;
     padding: 25px;
     border-radius: 40px;
+    padding-bottom: 100px; /* control-bar가 music-list의 공간을 침범하기 때문에 아래 패딩을 늘려줌 */
 }
 .playlist{
     position: relative; /* control-bar의 absolute를 위해 */
-    padding-bottom: 100px; /* control-bar가 music-list의 공간을 침범하기 때문에 아래 패딩을 늘려줌 */
 }
 
 /*----------------- Size or characteristic info -----------------*/
 .img--sm {
     width: 60px;
+}
+.img--3xl {
+    width: 300px;
 }
 .img--circle {
     border-radius: 50%;
@@ -136,4 +139,78 @@ button:hover {
 }
 .control-bar__column:last-child i {
     margin-left: 25px;
+}
+
+/*----------------- play-music -----------------*/
+/* music info */
+.music-info {
+    margin-bottom: 40px;
+}
+.music-info .music__cover {
+    margin: 80px 0px 70px;
+}
+.music-info__text {
+    text-align: center;
+}
+.music-info__text .music__title {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.music-info__text .music__author {
+    font-size: 16px;
+}
+
+/* play time bar */
+.play-time-bar {
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.time-bar {
+    padding: 10px 0px;
+}
+.time-bar__total {
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.time-bar__last {
+    width: 230px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.time-bar__current-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* play control bar */
+.play-control-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-control-bar > i:first-child,
+.play-control-bar > i:last-child {
+    color: rgba(0, 0, 0, 0.3);
 }
