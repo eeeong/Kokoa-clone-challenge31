@@ -186,7 +186,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.15);
 }
 .time-bar__last {
-    width: 230px;
+    width: 66%;
     height: 5px;
     border-radius: 10px;
     background-color: black;
