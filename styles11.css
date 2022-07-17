@@ -132,7 +132,12 @@ button:hover {
     color: white;
     position: absolute;
     bottom: 20px;
-    width: 320px; /* (playlist의 width 400) - (control-bar의 좌우 padding 80) */
+    /* width: 320px; (playlist의 width 400) - (control-bar의 좌우 padding 80) */
+    left: 20px;
+    right: 20px;
+    margin: 0px auto;
+
+
 }
 .control-bar__column .music__author {
     color: aquamarine;
